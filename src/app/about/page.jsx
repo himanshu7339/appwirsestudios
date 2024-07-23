@@ -4,18 +4,7 @@ import CodingImage from "@/images/CodingImage.jpg";
 const About = () => {
   return (
     <>
-      <section className="bg-gray-900">
-        <Image
-          src={CodingImage}
-          alt="About Us"
-          className="w-full h-64 object-cover opacity-50"
-          width={2000}
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl font-extrabold">About Us</h1>
-        </div>
-      </section>
-
+     
       {/* Body section */}
 
       <section className="bg-white py-12">

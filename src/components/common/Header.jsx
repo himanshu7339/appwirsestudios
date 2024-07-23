@@ -19,7 +19,7 @@ const Header = () => {
 
         <Link href="/">Home</Link>
         <Link href="/price">Pricing</Link>
-        <Link href="/dashboard">Projects</Link>
+        {/* <Link href="/dashboard">Projects</Link> */}
         <Link href="/termsandconditions">Terms And Conditions</Link>
         <Link href="/about">About Us</Link>
       </div>

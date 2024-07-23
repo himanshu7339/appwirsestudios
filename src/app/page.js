@@ -164,7 +164,7 @@ export default function Home() {
           </p>
           <div className="mt-8 flex justify-center space-x-4">
             <a
-              href="#schedule-consultation"
+              href={`tel:+91 8376849918`}
               className="inline-block bg-black text-white  py-3 px-6 rounded-lg shadow-lg hover:bg-gray-800"
             >
               Schedule a Free Consultation

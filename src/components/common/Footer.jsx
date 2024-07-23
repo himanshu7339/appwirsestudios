@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link"
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-12">
@@ -28,28 +28,24 @@ const Footer = () => {
           </div>
           {/* <!-- Social Media Links --> */}
           <div>
-            <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+            <h3 class="text-lg font-bold mb-4">Information</h3>
             <ul class="flex space-x-4">
               <li>
-                <a href="#" className="hover:underline">
-                  Facebook
-                </a>
+                <Link href="/about" className="hover:underline">
+                  About Us
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Twitter
-                </a>
+                <Link href="/price" className="hover:underline">
+                  Pricing
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  LinkedIn
+                <a href="/termsandconditions" className="hover:underline">
+                Terms And Conditions
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Instagram
-                </a>
-              </li>
+              
             </ul>
           </div>
           {/* <!-- Additional CTAs --> */}
