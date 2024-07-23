@@ -49,7 +49,7 @@ const Footer = () => {
             </ul>
           </div>
           {/* <!-- Additional CTAs --> */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">Stay Connected</h3>
             <div className="mb-4 ">
               <a
@@ -67,7 +67,7 @@ const Footer = () => {
                 Follow us on social media
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

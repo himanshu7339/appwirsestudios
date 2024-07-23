@@ -80,7 +80,7 @@ export default function Home() {
 
       {/* Problem Section */}
       <div className="problem-section ">
-        <h1 className="flex flex-col text-4xl gap-1 lg:text-xl p-1  justify-center  lg:text-6xl font-bold xl  text-center">
+        <h1 className="flex flex-col lg:flex-row text-3xl gap-1  p-1  justify-center  lg:text-6xl font-bold xl  text-center">
           Are You Struggling to
           <span className="text-[#E90074]"> Build Your Website</span>{" "}
         </h1>
