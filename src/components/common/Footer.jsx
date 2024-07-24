@@ -20,7 +20,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-2">
-                <a href="#" class="hover:underline">
+                <a href="#" className="hover:underline">
                   Chhattarpur Mata Chowk New Delhi 110074
                 </a>
               </li>
@@ -28,8 +28,8 @@ const Footer = () => {
           </div>
           {/* <!-- Social Media Links --> */}
           <div>
-            <h3 class="text-lg font-bold mb-4">Information</h3>
-            <ul class="flex space-x-4">
+            <h3 className="text-lg font-bold mb-4">Information</h3>
+            <ul className="flex space-x-4">
               <li>
                 <Link href="/about" className="hover:underline">
                   About Us
