@@ -80,7 +80,7 @@ const TermsAndConditions = () => {
 
       <footer className="mt-12 text-center">
         <p className="text-sm text-gray-600 mb-4">
-          If you have any questions about these Terms and Conditions, please contact us at <a href="mailto:support@example.com" className="text-blue-500 hover:underline">support@example.com</a>.
+          If you have any questions about these Terms and Conditions, please contact us at <a href="mailto:support@example.com" className="text-blue-500 hover:underline">appwisestudios@gmail.com</a>.
         </p>
         <p className="text-sm text-gray-600">© {new Date().getFullYear()} Appwisestudios. All Rights Reserved.</p>
       </footer>

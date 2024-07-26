@@ -4,25 +4,25 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import TopBar from "@/components/common/TopBar";
 import WhatApp from "@/components/common/WhatApp";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Appwisestudios",
   description: "Appwisestudios",
 };
-console.log(process.env.GTM)
+console.log(process.env.GTM);
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <GoogleTagManager gtmId={process.env.GTM} />
-      <WhatApp/>
+        <WhatApp />
         <TopBar />
         <Header />
-        
+
         {children}
-         <Footer />
+        <Footer />
+        <GoogleTagManager gtmId={process.env.GTM} />
       </body>
     </html>
   );
