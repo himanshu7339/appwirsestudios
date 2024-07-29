@@ -50,7 +50,7 @@ const PricingPage = () => {
       </div>
       <div className="mt-12">
         <h2 className="text-2xl font-semibold mb-4">Need something unique?</h2>
-        <Link href="https://forms.gle/UkhKJ64Pbaj7J7cZ9" className="bg-black hover:bg-slate-900 text-white font-bold py-2 px-6 rounded-full">
+        <Link href="/contact" className="bg-black hover:bg-slate-900 text-white font-bold py-2 px-6 rounded-full">
           Request a Custom Quote
         </Link>
       </div>
