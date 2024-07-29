@@ -22,6 +22,7 @@ const Header = () => {
         {/* <Link href="/dashboard">Projects</Link> */}
         <Link href="/termsandconditions">Terms And Conditions</Link>
         <Link href="/about">About Us</Link>
+        <Link href="https://forms.gle/UkhKJ64Pbaj7J7cZ9">Enquiry</Link>
       </div>
       <div className="header-button mt-3 mr-2">
         <a
