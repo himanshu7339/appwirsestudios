@@ -1,6 +1,7 @@
-// src/PricingPage.js
+
 
 import React from 'react';
+import Link from "next/link";
 
 const plans = [
   {
@@ -49,9 +50,9 @@ const PricingPage = () => {
       </div>
       <div className="mt-12">
         <h2 className="text-2xl font-semibold mb-4">Need something unique?</h2>
-        <a href="/contact" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full">
+        <Link href="https://forms.gle/UkhKJ64Pbaj7J7cZ9" className="bg-black hover:bg-slate-900 text-white font-bold py-2 px-6 rounded-full">
           Request a Custom Quote
-        </a>
+        </Link>
       </div>
     </div>
   );
