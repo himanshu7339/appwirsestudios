@@ -58,24 +58,20 @@ const About = () => {
           </h3>
           <ul className="list-disc list-inside text-lg text-gray-600 mb-4">
             <li>
-              Experienced Team: Our team has years of experience in web
-              development.
+             Responsive Design: Your website will look amazing on any device, ensuring a seamless user experience for all your visitors.
             </li>
             <li>
-              Personalized Service: We take the time to understand your business
-              and goals.
+             Exceptional UI: Our designs are visually appealing and intuitive, making it easy for your customers to navigate and engage.
             </li>
             <li>
-              Proven Results: Our clients see real improvements in their online
-              presence.
+             Lightning-Fast Speed: We prioritize speed, ensuring your website loads quickly and efficiently, keeping visitors happy, and improving search rankings.
             </li>
           </ul>
           <h3 className="text-2xl font-bold text-gray-900 mb-2">
             Get in Touch
           </h3>
           <p className="text-lg text-gray-600">
-            Ready to start your web development project? Contact us today to see
-            how we can help!
+           Contact Appwisestudios today and let’s build something amazing together!
           </p>
         </div>
       </section>
