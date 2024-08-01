@@ -8,10 +8,9 @@ import { GoogleTagManager } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Appwisestudios",
-  description: "Appwisestudios",
+  title: "Appwisestudios | High-Quality Web Development at Affordable Prices",
+  description: "Appwisestudios offers premium web development services that fit your budget. Our responsive, user-friendly, and fast-loading websites ensure a top-notch online presence. Contact us to start building your dream website!",
 };
-console.log(process.env.GTM);
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
