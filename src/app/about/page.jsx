@@ -61,14 +61,14 @@ const About = () => {
              Responsive Design: Your website will look amazing on any device, ensuring a seamless user experience for all your visitors.
             </li>
             <li>
-             Exceptional UI: Our designs are visually appealing and intuitive, making it easy for your customers to navigate and engage.
+             Exceptional UI: Our designs are visually appealing and intuitive, making navigating and engaging easy for your customers.
             </li>
             <li>
              Lightning-Fast Speed: We prioritize speed, ensuring your website loads quickly and efficiently, keeping visitors happy, and improving search rankings.
             </li>
           </ul>
           <h3 className="text-2xl font-bold text-gray-900 mb-2">
-            Get in Touch
+           Ready to elevate your online presence?
           </h3>
           <p className="text-lg text-gray-600">
            Contact Appwisestudios today and let’s build something amazing together!
