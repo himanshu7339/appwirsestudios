@@ -2,7 +2,9 @@
 
 import React from 'react';
 import Link from "next/link";
-
+export const metadata = {
+  title: 'Price Plans',
+}
 const plans = [
   {
     title: 'Basic Plan',

@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import CodingImage from "@/images/CodingImage.jpg";
+export const metadata = {
+  title: 'About Us',
+}
 const About = () => {
   return (
     <>

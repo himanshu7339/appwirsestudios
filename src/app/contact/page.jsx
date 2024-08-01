@@ -1,5 +1,7 @@
 import React from "react";
-
+export const metadata = {
+  title: 'Enquiry',
+}
 const contact = () => {
   return (
     <div className="contact flex justify-center p-3  overflow-y-auto">
