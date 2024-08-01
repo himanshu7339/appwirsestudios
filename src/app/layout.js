@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <GoogleTagManager gtmId="GTM-W6CN9J3W" />
-    <GoogleAnalytics gaId="G-1Q67N96P6V" />
+    <GoogleAnalytics gaId="G-1BQK1H600E" />
       </body>
     </html>
   );
