@@ -4,7 +4,7 @@ import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import TopBar from "@/components/common/TopBar";
 import WhatApp from "@/components/common/WhatApp";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager,GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <GoogleTagManager gtmId="GTM-W6CN9J3W" />
+    <GoogleAnalytics gaId="G-1Q67N96P6V" />
       </body>
     </html>
   );
