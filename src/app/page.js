@@ -60,7 +60,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="sub-heading text-xl  text-slate-700  mt-6 lg:mt-16 ">
-          Are you in need of a stunning website that fits your budget? Look no further!<br/> At Appwisestudios,  we specialize in creating beautiful, responsive websites that won't break the bank.
+          Are you in need of a stunning website that fits your budget? Look no further!<br/> At Appwisestudios,  we specialize in creating beautiful, responsive websites.
           </p>
 
           <div className="buttons lg:mt-16 mt-4 flex gap-5">
