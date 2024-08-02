@@ -1,11 +1,12 @@
 import Image from "next/image";
 
 import { FaRegSadCry, FaRegSmileBeam } from "react-icons/fa";
-
+import { PiArrowBendRightDownBold,PiArrowBendRightUp  } from "react-icons/pi";
 import HeroImage from "@/images/web_design.png";
 import Men from "@/images/frusted_men.png";
 import Me from "@/images/me.jpg";
 import { GoArrowUpRight } from "react-icons/go";
+import Form from "@/components/common/Form";
 const testimonials = [
   {
     name: "John Doe",
@@ -44,7 +45,7 @@ export default function Home() {
   return (
     <div className={``}>
       {/* Hero section */}
-      <div className="flex-container flex flex-col lg:flex-row justify-between">
+      <div className="flex-container flex flex-col lg:flex-row justify-around">
         <div className="left-container p-2 lg:p-20 flex flex-col items-center lg:items-start">
           <h1 className="lg:text-4xl text-3xl flex flex-col  gap-2">
             <span className="lg:text-6xl font-bold   lg:font-bold">
@@ -58,8 +59,8 @@ export default function Home() {
               Web Development{" "}
             </span>
           </h1>
-          <p className="sub-heading text-xl  text-slate-700  mt-6 lg:mt-16 lg:text-2xl">
-            Helping small businesses create stunning effective websites.
+          <p className="sub-heading text-xl  text-slate-700  mt-6 lg:mt-16 ">
+          Are you in need of a stunning website that fits your budget? Look no further!<br/> At Appwisestudios,  we specialize in creating beautiful, responsive websites that won't break the bank.
           </p>
 
           <div className="buttons lg:mt-16 mt-4 flex gap-5">
@@ -73,8 +74,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="right-container p-5 lg:p-20">
-          <Image src={HeroImage} width={600} alt="hero-image"/>
+        <div className="right-container p-5 ">
+          <div className="arrow-design-section flex justify-between">
+            <PiArrowBendRightDownBold className="lg:text-6xl text-2xl" />
+            <PiArrowBendRightDownBold className="lg:text-6xl text-2xl"/>
+          </div>
+
+         <Form/>
+          <div className="arrow-design-section flex justify-between">
+            <PiArrowBendRightUp  className="lg:text-6xl text-2xl" />
+            <PiArrowBendRightUp  className="lg:text-6xl text-2xl"/>
+          </div>
         </div>
       </div>
 
@@ -140,17 +150,17 @@ export default function Home() {
 
       {/* Our Dev strategy */}
 
-     
-      
-
-        <section className="bg-gray-100 py-12">
-      <div className="max-w-4xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Our Website Development Strategy</h2>
-        <p className="text-lg text-gray-700 mb-6">
-          Our Simple 3-Step Plan: Discuss Your Needs, Design & Build Your Website, and Launch & Maintain.
-        </p>
-      </div>
-    </section>
+      <section className="bg-gray-100 py-12">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-semibold mb-4">
+            Our Website Development Strategy
+          </h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Our Simple 3-Step Plan: Discuss Your Needs, Design & Build Your
+            Website, and Launch & Maintain.
+          </p>
+        </div>
+      </section>
 
       {/* download guide */}
       <div className="bg-gray-100 py-8">

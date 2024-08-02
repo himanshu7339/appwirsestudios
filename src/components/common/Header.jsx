@@ -7,7 +7,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <div className="bg-white flex  justify-between gap-1 sticky top-0 lg:shadow-sm ">
-      <div className="navlinks flex flex-col gap-3 min-h-60   p-5 lg:flex-row lg:min-h-0 lg:gap-8 lg:p-4 lg:ml-28">
+      <div className="navlinks flex flex-col gap-3 min-h-60   p-5 lg:flex-row lg:min-h-0 lg:gap-8 lg:p-4 lg:ml-28 lg:items-center">
         <Link href={"/"}>
           <Image
             src={Logo}
@@ -24,7 +24,7 @@ const Header = () => {
         <Link href="/about">About Us</Link>
         <Link href="/contact">Enquiry</Link>
       </div>
-      <div className="header-button mt-3 mr-2">
+      <div className="header-button mt-3 mr-2 lg:items-center lg:flex">
         <a
           href={`tel:+91 8376849918`}
           className={`bg-black flex items-center gap-1 hover:bg-gray-700 p-3 text-sm text-white lg:font-semibold lg:text-[1rem] lg:p-2  rounded-lg`}
