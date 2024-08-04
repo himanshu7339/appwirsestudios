@@ -49,35 +49,38 @@ const Form = () => {
   return (
     <form
       onSubmit={onSubmitHandler}
-      className="flex flex-col border-2 p-2 lg:p-20 gap-3 rounded-md shadow-lg "
+      className="flex flex-col bg-green  p-2 lg:p-20 gap-3 rounded-md shadow-lg "
     >
-      <label htmlFor="name" className="flex flex-col">
+
+      <h1 className="lg:ext-2xl text-xl font-bold text-navy">Please submit the form, and <br/> we will call soon!</h1>
+      <label htmlFor="name" className="flex flex-col text-beige">
         Name
         <input
           name="name"
           type="text"
-          className="border-2 p-1 rounded-md"
+          className=" p-2 rounded-md text-navy focus:outline-none"
           placeholder="Name"
           value={formData.name}
           onChange={handleChange}
         />
       </label>
-      <label htmlFor="email" className="flex flex-col">
+      <label htmlFor="email" className="flex flex-col text-beige">
         Email
         <input
           name="email"
           type="email"
-          className="border-2 p-1 rounded-md"
+          className=" p-2 rounded-md text-navy focus:outline-none"
           placeholder="example@gmail.com"
           value={formData.email}
           onChange={handleChange}
         />
       </label>
-      <label htmlFor="mobileNumber" className="flex flex-col">
+      <label htmlFor="mobileNumber" className="flex flex-col text-beige">
         Mobile No
         <input
-          className="border-2 p-1 rounded-md"
+          className=" p-2 rounded-md text-navy focus:outline-none"
           type="text"
+          placeholder="Mobile"
           name="mobileNumber"
           value={formData.mobileNumber}
           onChange={handleChange}
@@ -86,7 +89,7 @@ const Form = () => {
           required
         />
       </label>
-      <button type="submit" className=" bg-black text-white p-1 m-2 rounded-md">
+      <button type="submit" className=" bg-navy text-beige border p-1 m-2 rounded-md">
         Book Appointment Now
       </button>
     </form>

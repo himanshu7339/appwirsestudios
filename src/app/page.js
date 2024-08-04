@@ -43,11 +43,11 @@ const testimonials = [
 ];
 export default function Home() {
   return (
-    <div className={``}>
+    <div className={`bg-beige`}>
       {/* Hero section */}
       <div className="flex-container flex flex-col lg:flex-row justify-around">
         <div className="left-container p-2 lg:p-20 flex flex-col items-center lg:items-start">
-          <h1 className="lg:text-4xl text-3xl flex flex-col  gap-2">
+          <h1 className="lg:text-4xl text-navy text-3xl flex flex-col  gap-2">
             <span className="lg:text-6xl font-bold   lg:font-bold">
               {" "}
               Transform Your Online{" "}
@@ -59,14 +59,14 @@ export default function Home() {
               Web Development{" "}
             </span>
           </h1>
-          <p className="sub-heading text-xl  text-slate-700  mt-6 lg:mt-16 ">
+          <p className="sub-heading lg:text-xl  text-slate-700  mt-6 lg:mt-16 ">
           Are you in need of a stunning website that fits your budget? Look no further!<br/> At Appwisestudios,  we specialize in creating beautiful, responsive websites.
           </p>
 
           <div className="buttons lg:mt-16 mt-4 flex gap-5">
             <a
               href={`tel:+91 8376849918`}
-              className="bg-black flex gap-1 items-center hover:bg-gray-700 p-2 text-[1rem] text-white  lg:text-[1rem] lg:p-2  rounded-lg"
+              className="bg-navy text-beige flex gap-1 items-center hover:bg-gray-700 p-2 text-[1rem] text-white  lg:text-[1rem] lg:p-2  rounded-lg"
             >
               Schedule a Free Consultation
               <GoArrowUpRight />
@@ -76,7 +76,7 @@ export default function Home() {
 
         <div className="right-container p-5 ">
           <div className="arrow-design-section flex justify-between">
-            <PiArrowBendRightDownBold className="lg:text-6xl text-2xl" />
+            <PiArrowBendRightDownBold className="lg:text-6xl text-2xl font-extrabold" />
             <PiArrowBendRightDownBold className="lg:text-6xl text-2xl"/>
           </div>
 
@@ -90,9 +90,9 @@ export default function Home() {
 
       {/* Problem Section */}
       <div className="problem-section ">
-        <h1 className="flex flex-col lg:flex-row text-3xl gap-1  p-1  justify-center  lg:text-6xl font-bold xl  text-center">
+        <h1 className="flex text-navy flex-col lg:flex-row text-3xl gap-1  p-1  justify-center  lg:text-6xl font-bold xl  text-center">
           Are You Struggling to
-          <span className="text-[#E90074]"> Build Your Website</span>{" "}
+          <span> Build Your Website</span>{" "}
         </h1>
         <div className="container-div flex  flex-col-reverse lg:flex-row justify-center items-center">
           <div className=" left-box problem-in-points mt-4 p-8">
@@ -175,14 +175,14 @@ export default function Home() {
           <div className="mt-8 flex justify-center space-x-4">
             <a
               href={`tel:+91 8376849918`}
-              className="inline-block bg-black text-white  py-3 px-6 rounded-lg shadow-lg hover:bg-gray-800"
+              className="inline-block bg-navy text-beige  py-3 px-6 rounded-lg shadow-lg hover:bg-gray-800"
             >
               Schedule a Free Consultation
             </a>
 
             <a
               href="https://drive.google.com/file/d/1vRd_6e4cJPs80oITyKmStCKcWGmyEisS/view?usp=drive_link"
-              className="inline-block bg-white text-black  py-3 px-6 rounded-lg shadow-lg border border-black hover:bg-gray-100"
+              className="inline-block bg-navy text-beige  py-3 px-6 rounded-lg shadow-lg border border-black hover:bg-gray-100"
             >
               Download Our Free Guide
             </a>
