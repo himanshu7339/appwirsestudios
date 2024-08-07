@@ -1,14 +1,11 @@
 import Image from "next/image";
 
-import { FaRegSadCry, FaRegSmileBeam } from "react-icons/fa";
-import { PiArrowBendRightDownBold, PiArrowBendRightUp } from "react-icons/pi";
-import HeroImage from "@/images/web_design.png";
-import Men from "@/images/frusted_men.png";
+
 import Me from "@/images/me.jpg";
 
 import Form from "@/components/common/Form";
 import { IoCall } from "react-icons/io5";
-import CodingImage from "@/images/coding-Image.jpg"
+import CodingImage from "@/images/Coding-Image.jpg"
 
 const testimonials = [
   {
