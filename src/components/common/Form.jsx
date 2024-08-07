@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import { FaLongArrowAltRight } from "react-icons/fa";
 const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -49,36 +49,36 @@ const Form = () => {
   return (
     <form
       onSubmit={onSubmitHandler}
-      className="flex flex-col bg-green  p-2 lg:p-20 gap-3 rounded-md shadow-lg "
+      className="flex flex-col bg-blue  p-2 lg:p-20 gap-3 rounded-md shadow-lg "
     >
 
-      <h1 className="lg:ext-2xl text-xl font-bold text-navy">Please submit the form, and <br/> we will call soon!</h1>
-      <label htmlFor="name" className="flex flex-col text-beige">
+      <h1 className="lg:ext-2xl text-xl font-bold text-white">Please submit the form, and <br/> we will call soon!</h1>
+      <label htmlFor="name" className="flex flex-col text-white">
         Name
         <input
           name="name"
           type="text"
-          className=" p-2 rounded-md text-navy focus:outline-none"
+          className=" p-2 rounded-md text-black focus:outline-none"
           placeholder="Name"
           value={formData.name}
           onChange={handleChange}
         />
       </label>
-      <label htmlFor="email" className="flex flex-col text-beige">
+      <label htmlFor="email" className="flex flex-col text-black">
         Email
         <input
           name="email"
           type="email"
-          className=" p-2 rounded-md text-navy focus:outline-none"
+          className=" p-2 rounded-md text-black focus:outline-none"
           placeholder="example@gmail.com"
           value={formData.email}
           onChange={handleChange}
         />
       </label>
-      <label htmlFor="mobileNumber" className="flex flex-col text-beige">
+      <label htmlFor="mobileNumber" className="flex flex-col text-white">
         Mobile No
         <input
-          className=" p-2 rounded-md text-navy focus:outline-none"
+          className=" p-2 rounded-md text-black focus:outline-none"
           type="text"
           placeholder="Mobile"
           name="mobileNumber"
@@ -89,8 +89,8 @@ const Form = () => {
           required
         />
       </label>
-      <button type="submit" className=" bg-navy text-beige border p-1 m-2 rounded-md">
-        Book Appointment Now
+      <button type="submit" className=" bg-blue hover:bg-black duration-300 transition flex items-center justify-between text-white border p-1 m-2 rounded-md">
+        Book Appointment Now <FaLongArrowAltRight/>
       </button>
     </form>
   );

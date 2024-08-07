@@ -1,61 +1,247 @@
-
-
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 export const metadata = {
-  title: 'Price Plans',
-}
+  title: "Price Plans",
+};
 const plans = [
   {
-    title: 'Basic Plan',
-    price: '₹2,999',
-    features: ['1 Page Design', 'Basic SEO Optimization', 'Responsive Design'],
-    buttonText: 'Select Plan',
-    buttonColor: 'bg-green-500 hover:bg-green-600'
+    title: "Basic Plan",
+    price: "₹2,999",
+    features: ["1 Page Design", "Basic SEO Optimization", "Responsive Design"],
+    buttonText: "Select Plan",
+    buttonColor: "bg-green-500 hover:bg-green-600",
   },
   {
-    title: 'Standard Plan',
-    price: '₹6,999',
-    features: ['5 Page Design', 'Advanced SEO Optimization', 'Responsive Design', 'Basic E-commerce Setup'],
-    buttonText: 'Select Plan',
-    buttonColor: 'bg-blue-500 hover:bg-blue-600'
+    title: "Standard Plan",
+    price: "₹6,999",
+    features: [
+      "5 Page Design",
+      "Advanced SEO Optimization",
+      "Responsive Design",
+      "Basic E-commerce Setup",
+    ],
+    buttonText: "Select Plan",
+    buttonColor: "bg-blue-500 hover:bg-blue-600",
   },
   {
-    title: 'Premium Plan',
-    price: '₹15,999',
-    features: ['Unlimited Pages', 'Premium SEO Optimization', 'Advanced Features', 'Complete E-commerce Solution'],
-    buttonText: 'Select Plan',
-    buttonColor: 'bg-red-500 hover:bg-red-600'
-  }
+    title: "Premium Plan",
+    price: "₹15,999",
+    features: [
+      "Unlimited Pages",
+      "Premium SEO Optimization",
+      "Advanced Features",
+      "Complete E-commerce Solution",
+    ],
+    buttonText: "Select Plan",
+    buttonColor: "bg-red-500 hover:bg-red-600",
+  },
 ];
 
 const PricingPage = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 text-center">
-      <h1 className="text-4xl font-bold mb-4">Our Pricing Plans</h1>
-      <p className="text-lg text-gray-600 mb-12">Affordable solutions for all your web development needs.</p>
-      <div className="flex flex-wrap gap-6 justify-center">
-        {plans.map((plan, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg p-6 max-w-sm w-full">
-            <h2 className="text-2xl font-semibold mb-2">{plan.title}</h2>
-            <p className="text-xl text-gray-800 mb-4">{plan.price}</p>
-            <ul className="list-disc list-inside mb-6">
-              {plan.features.map((feature, i) => (
-                <li key={i} className="text-gray-600">{feature}</li>
-              ))}
-            </ul>
-            <button className={`${plan.buttonColor} text-white font-bold py-2 px-4 rounded-full`}>
-              {plan.buttonText}
-            </button>
+    <div className="flex justify-center mx-auto p-6 text-center">
+      <section className="p-4 md:p-8">
+        <div className="py-8 max-w-screen-xl lg:py-16">
+          <div className="mx-auto max-w-3xl  text-center pb-12 md:pb-20">
+            <h2 className="text-3xl font-bold sm:text-4xl mb-4">
+              Pricing Plans
+            </h2>
+            <p className="text-xl">
+              Choose a plan that best suits your data needs.
+            </p>
           </div>
-        ))}
-      </div>
-      <div className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4">Need something unique?</h2>
-        <Link href="/contact" className="bg-black hover:bg-slate-900 text-white font-bold py-2 px-6 rounded-full">
-          Request a Custom Quote
-        </Link>
-      </div>
+          <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+            <div className="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8   shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+              <h3 className="mb-4 text-2xl font-semibold">Basic Plan</h3>
+
+              <div className="flex justify-center items-baseline my-9">
+                <span className="mr-2 text-5xl font-extrabold">₹2,999</span>
+              </div>
+              <ul role="list" className="mb-8 space-y-4 text-left">
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+
+                  <span className="text-base-content/80">1 Page Design</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">
+                    Basic SEO Optimization
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">
+                    Responsive Design
+                  </span>
+                </li>
+              </ul>
+              {/* <button className="w-full font-bold gap-2 shadow uppercase p-2 bg-teal-500 text-white">
+                Get Started
+              </button> */}
+            </div>
+            <div className="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8   shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+              <h3 className="mb-4 text-2xl font-semibold">Standard Plan</h3>
+
+              <div className="flex justify-center items-baseline my-9">
+                <span className="mr-2 text-5xl font-extrabold">₹6,999</span>
+              </div>
+              <ul role="list" className="mb-8 space-y-4 text-left">
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">5 Page Design</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">
+                    Advanced SEO Optimization
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">
+                    Responsive Design
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">
+                    Basic E-commerce Setup
+                  </span>
+                </li>
+
+                
+              </ul>
+              {/* <button className="w-full p-2 bg-gray-500 text-white font-bold gap-2 shadow uppercase">
+                Coming soon ...
+              </button> */}
+            </div>
+
+            <div className="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8   shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
+              <h3 className="mb-4 text-2xl font-semibold">Premium Plan</h3>
+             
+              <div className="flex justify-center items-baseline my-9">
+                <span className="mr-2 text-5xl font-extrabold">₹15,999</span>
+              </div>
+              <ul role="list" className="mb-8 space-y-4 text-left">
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">Unlimited Pages</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">
+                    Premium SEO Optimization
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">
+                    Advanced Features
+                  </span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <svg
+                    className="w-6 h-6 text-blue"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"></path>
+                  </svg>
+                  <span className="text-base-content/80">
+                    Complete E-commerce Solution
+                  </span>
+                </li>
+              </ul>
+              {/* <button className="w-full p-2 bg-gray-500 text-white font-bold gap-2 shadow uppercase">
+                Coming soon ...
+              </button> */}
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

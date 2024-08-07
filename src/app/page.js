@@ -1,12 +1,15 @@
 import Image from "next/image";
 
 import { FaRegSadCry, FaRegSmileBeam } from "react-icons/fa";
-import { PiArrowBendRightDownBold,PiArrowBendRightUp  } from "react-icons/pi";
+import { PiArrowBendRightDownBold, PiArrowBendRightUp } from "react-icons/pi";
 import HeroImage from "@/images/web_design.png";
 import Men from "@/images/frusted_men.png";
 import Me from "@/images/me.jpg";
-import { GoArrowUpRight } from "react-icons/go";
+
 import Form from "@/components/common/Form";
+import { IoCall } from "react-icons/io5";
+import CodingImage from "@/images/coding-Image.jpg"
+
 const testimonials = [
   {
     name: "John Doe",
@@ -43,231 +46,79 @@ const testimonials = [
 ];
 export default function Home() {
   return (
-    <div className={`bg-beige`}>
-      {/* Hero section */}
-      <div className="flex-container flex flex-col lg:flex-row justify-around">
-        <div className="left-container p-2 lg:p-20 flex flex-col items-center lg:items-start">
-          <h1 className="lg:text-4xl text-navy text-3xl flex flex-col  gap-2">
-            <span className="lg:text-6xl font-bold   lg:font-bold">
-              {" "}
-              Transform Your Online{" "}
-            </span>
-            <span className="lg:text-6xl lg:font-semibold">
-              Presence with Professional{" "}
-            </span>
-            <span className="lg:text-5xl lg:font-semibold underline">
-              Web Development{" "}
-            </span>
+    <div className="home">
+      <div className="hero-section-div flex flex-col lg:flex-row  lg:p-11 justify-between">
+        {/* Attention */}
+        <section className="hero-section m-4 ">
+          <h1 className="text-center lg:text-start text-xl lg:text-6xl font-semibold">
+            Transform Your Online Presence <br />{" "}
+            <span className="font-normal">with Expert Web Development</span>
           </h1>
-          <p className="sub-heading lg:text-xl  text-slate-700  mt-6 lg:mt-16 ">
-          Are you in need of a stunning website that fits your budget? Look no further!<br/> At Appwisestudios,  we specialize in creating beautiful, responsive websites.
+          <p className="text-sm text-center lg:text-xl mt-5 lg:text-start min-w-48">
+            Your website is often the first impression customers have of your
+            business. Make it count with a stunning, high-performance website
+            from <br /> appwisestudios Web Development Service.
           </p>
 
-          <div className="buttons lg:mt-16 mt-4 flex gap-5">
+          <div className="header-button lg:w-[8.5rem] h-12 border-2 border-white bg-blue hover:bg-black duration-300 transition block p-3 mt-2 rounded-md">
             <a
               href={`tel:+91 8376849918`}
-              className="bg-navy text-beige flex gap-1 items-center hover:bg-gray-700 p-2 text-[1rem] text-white  lg:text-[1rem] lg:p-2  rounded-lg"
+              className={`  flex items-center justify-between gap-2  text-white  rounded-lg`}
             >
-              Schedule a Free Consultation
-              <GoArrowUpRight />
+              Let&apos;s Talk <IoCall className="" />
             </a>
           </div>
-        </div>
-
-        <div className="right-container p-5 ">
-          <div className="arrow-design-section flex justify-between">
-            <PiArrowBendRightDownBold className="lg:text-6xl text-2xl font-extrabold" />
-            <PiArrowBendRightDownBold className="lg:text-6xl text-2xl"/>
-          </div>
-
-         <Form/>
-          <div className="arrow-design-section flex justify-between">
-            <PiArrowBendRightUp  className="lg:text-6xl text-2xl" />
-            <PiArrowBendRightUp  className="lg:text-6xl text-2xl"/>
-          </div>
+        </section>
+        {/* form section */}
+        <div className="form-section-lead p-5 lg:p-0 ">
+          <Form />
         </div>
       </div>
 
-      {/* Problem Section */}
-      <div className="problem-section ">
-        <h1 className="flex text-navy flex-col lg:flex-row text-3xl gap-1  p-1  justify-center  lg:text-6xl font-bold xl  text-center">
-          Are You Struggling to
-          <span> Build Your Website</span>{" "}
-        </h1>
-        <div className="container-div flex  flex-col-reverse lg:flex-row justify-center items-center">
-          <div className=" left-box problem-in-points mt-4 p-8">
-            <ul className="list-disc text-lg lg:text-2xl space-y-3">
-              <li>Building a website can be overwhelming and time-consuming</li>
-              <li>Do you feel frustrated by the technical complexities?</li>
-              <li>
-                We believe every business deserves a great website without the
-                hassle.
-              </li>
-            </ul>
-          </div>
-          <div className="right-box">
-            {/* <h1>Image</h1> */}
-            <Image src={Men} alt="" width={400} height={200} />
-          </div>
-        </div>
-      </div>
+      {/* Why Choose Us? */}
 
-      {/* About Us */}
-      {/* <div className="about-section">
-        <h1 className="text-center text-2xl font-bold lg:text-[2.5rem] mb-5">
-          About Us
-        </h1>
-        <h1 className="text-center text-xl  lg:text-5xl font-bold ">
-          {" "}
-          <span className="text-[#E90074] ">Your Expert Web </span>Development
-          Guide
-        </h1>
-        <div className="about-us-container flex flex-col-reverse lg:flex-row justify-center p-7 gap-16 items-center">
-          <div className="left">
-            <ul className="list-disc lg:text-2xl space-y-3">
-              <li>
-                We understand the challenges of creating a professional website.
-              </li>
-              <li>
-                With over 3 years of experience and a portfolio of successful
-                projects, we are here to help.
-              </li>
-            </ul>
-            <h1></h1>
-            <h1></h1>
-          </div>
-          <div class="w-[23rem] h-[37rem] md:w-48 md:h-48 lg:w-[26rem] lg:h-[29rem] rounded-full overflow-hidden ">
-            <Image
-              className="w-full h-full object-none"
-              src={Me}
-              alt=""
-              width={200}
-              height={200}
-            />
-          </div>
-        </div>
-      </div> */}
-
-      {/* Our Dev strategy */}
-
-      <section className="bg-gray-100 py-12">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-semibold mb-4">
-            Our Website Development Strategy
-          </h2>
-          <p className="text-lg text-gray-700 mb-6">
-            Our Simple 3-Step Plan: Discuss Your Needs, Design & Build Your
-            Website, and Launch & Maintain.
+      <section className="why-we-choose-us flex flex-col gap-7 lg:flex-row p-7">
+        <div className="right-div">
+          <h1 className="lg:text-start text-xl text-center lg:text-5xl font-bold mb-6">
+            Why Choose Us?
+          </h1>
+          <p className="text-sm lg:text-xl">
+            In today’s digital world, your website is your most important
+            business tool. It needs to be attractive, functional, and
+            user-friendly. Our web development service ensures your website
+            meets all these criteria and more.
           </p>
+        </div>
+
+        <div className="right-left">
+          <Image src={CodingImage} alt="coding-image"/>
         </div>
       </section>
 
-      {/* download guide */}
-      <div className="bg-gray-100 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-xl font-extrabold text-gray-900 sm:text-4xl">
-            Ready to Transform Your Online Presence?
+      {/* We Address Your Key Challenges */}
+      <section className="">
+        <ul className="list-disc bg-blue p-7 lg:text-xl ">
+          <h2 className="lg:text-2xl mb-5 font-semibold text-start">
+            We Address Your Key Challenges
           </h2>
-          <p className="mt-4 text-sm leading-6 text-gray-600">
-            Schedule a free consultation with us or download our guide to start
-            building an effective website today.
-          </p>
-          <div className="mt-8 flex justify-center space-x-4">
-            <a
-              href={`tel:+91 8376849918`}
-              className="inline-block bg-navy text-beige  py-3 px-6 rounded-lg shadow-lg hover:bg-gray-800"
-            >
-              Schedule a Free Consultation
-            </a>
-
-            <a
-              href="https://drive.google.com/file/d/1vRd_6e4cJPs80oITyKmStCKcWGmyEisS/view?usp=drive_link"
-              className="inline-block bg-navy text-beige  py-3 px-6 rounded-lg shadow-lg border border-black hover:bg-gray-100"
-            >
-              Download Our Free Guide
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* testimonials */}
-
-      {/* <section className="bg-gray-50 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-8">
-            Success Stories
-          </h2>
-          <p className="text-lg text-gray-600 text-center mb-12">
-            Read how we’ve helped businesses like yours grow with a professional
-            website.
-          </p>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="flex flex-col md:flex-row bg-white p-6 rounded-lg shadow-lg"
-              >
-                <div className="md:w-1/3 mb-4 md:mb-0">
-                  <Image
-                    src={testimonial.beforeImage}
-                    alt="Before"
-                    className="w-full rounded-lg mb-2"
-                  />
-                  <Image
-                    src={testimonial.afterImage}
-                    alt="After"
-                    className="w-full rounded-lg"
-                  />
-                </div>
-                <div className="md:w-2/3 md:pl-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {testimonial.name}, {testimonial.company}
-                  </h3>
-                  <p className="text-gray-700 mb-4">
-                    {testimonial.testimonial}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-      {/* Stakes */}
-      <section className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
-            Don’t Risk Losing Potential Customers
-          </h2>
-          <p className="text-lg text-gray-600 mb-12">
-            Without a strong online presence, your business may fall behind
-            competitors. Ensure your success with a professional website.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* <!-- Risk Section --> */}
-            <div className="bg-red-100 p-6 rounded-lg shadow-lg flex items-center justify-center flex-col">
-              <FaRegSadCry className="text-red-500 text-6xl mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">The Risk</h3>
-              <p className="text-gray-700">
-                Losing potential customers, falling behind competitors, and
-                missing out on growth opportunities.
-              </p>
-            </div>
-
-            {/* <!-- Reward Section --> */}
-            <div className="bg-green-100 p-6 rounded-lg shadow-lg flex items-center justify-center flex-col">
-              <FaRegSmileBeam className="text-green-500 text-6xl mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                The Reward
-              </h3>
-              <p className="text-gray-700">
-                Attracting more customers, staying ahead of competitors, and
-                achieving significant business growth.
-              </p>
-            </div>
-          </div>
-        </div>
+          {/* list */}
+          <li>
+            <span>Outdated Design</span>: Fresh, modern designs that reflect
+            your brand.
+          </li>
+          <li>
+            <span>Poor User Experience</span>: Seamless navigation and
+            functionality.
+          </li>
+          <li>
+            <span>Non-Responsive Sites</span>: Fully optimized for all devices.
+          </li>
+          <li>
+            <span>Low Conversion Rates</span>: Strategic design to convert
+            visitors into customers.
+          </li>
+        </ul>
+        <div className="line-div bg-white h-2"></div>
       </section>
     </div>
   );
