@@ -18,7 +18,7 @@ const HamburgerMenu = () => {
     <>
       <GiHamburgerMenu onClick={toggleMenu} className="text-2xl left-4 top-7 absolute" />
       <div
-        className={`absolute  z-30 min-h-[100%] shadow-lf min-w-[70%]  lg:hidden visible  bg-blue ${isOpen ? "left-[0]":"left-[-16.8rem]"} duration-500 `}
+        className={`absolute  z-30 min-h-[100%] shadow-lf min-w-[70%]  lg:hidden visible  bg-blue ${isOpen ? "translate-x-0" : "-translate-x-full"} duration-500 `}
       >
         <div className="top-div flex justify-between p-4">
             <h1 className=" text-xl font-bold">Appwisestudios</h1>
