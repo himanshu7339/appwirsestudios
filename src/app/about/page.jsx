@@ -10,22 +10,22 @@ const About = () => {
 
       <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
+          <h2 className="lg:text-3xl text-xl font-extrabold text-gray-900 mb-4">
             About Us
           </h2>
-          <p className="text-lg text-gray-600 mb-4">
+          <p className="lg:text-lg text-gray-600 mb-4">
             Welcome to Appwisestudios! We are a team of passionate web
             developers dedicated to helping businesses succeed online. Our goal
             is to create beautiful, functional websites that make a real impact.
           </p>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Mission</h3>
-          <p className="text-lg text-gray-600 mb-4">
+          <h3 className="lg:text-2xl text-xl font-bold text-gray-900 mb-2">Our Mission</h3>
+          <p className="lg:text-lg text-gray-600 mb-4">
             Our mission is simple: to provide high-quality web development
             services that help businesses grow. We believe that a great website
             can be a powerful tool for success.
           </p>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Values</h3>
-          <ul className="list-disc list-inside text-lg text-gray-600 mb-4">
+          <h3 className="lg:text-2xl text-xl font-bold text-gray-900 mb-2">Our Values</h3>
+          <ul className="list-disc list-inside lg:text-lg text-gray-600 mb-4">
             <li>
               Quality: We deliver top-notch work that meets the highest
               standards.
@@ -39,8 +39,8 @@ const About = () => {
               to their needs.
             </li>
           </ul>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">What We Do</h3>
-          <ul className="list-disc list-inside text-lg text-gray-600 mb-4">
+          <h3 className="lg:text-2xl text-xl font-bold text-gray-900 mb-2">What We Do</h3>
+          <ul className="list-disc list-inside lg:text-lg text-gray-600 mb-4">
             <li>
               Website Design and Development: We build custom websites that look
               great and work perfectly.
@@ -54,10 +54,10 @@ const About = () => {
               attract more customers.
             </li>
           </ul>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">
+          <h3 className="lg:text-2xl text-xl font-bold text-gray-900 mb-2">
             Why Choose Us?
           </h3>
-          <ul className="list-disc list-inside text-lg text-gray-600 mb-4">
+          <ul className="list-disc list-inside lg:text-lg text-gray-600 mb-4">
             <li>
              Responsive Design: Your website will look amazing on any device, ensuring a seamless user experience for all your visitors.
             </li>
@@ -68,10 +68,10 @@ const About = () => {
              Lightning-Fast Speed: We prioritize speed, ensuring your website loads quickly and efficiently, keeping visitors happy, and improving search rankings.
             </li>
           </ul>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">
+          <h3 className="lg:text-2xl font-bold text-gray-900 mb-2">
            Ready to elevate your online presence?
           </h3>
-          <p className="text-lg text-gray-600">
+          <p className="lg:text-lg text-gray-600">
            Contact Appwisestudios today and let’s build something amazing together!
           </p>
         </div>

@@ -46,10 +46,10 @@ export default function Home() {
     <div className="home">
       <div className="hero-section-div flex flex-col lg:flex-row  lg:p-11 justify-between">
         {/* Attention */}
-        <section className="hero-section m-4 ">
+        <section className="hero-section m-4 mt-14 ">
           <h1 className="text-center lg:text-start text-xl lg:text-6xl font-semibold">
-            Transform Your Online Presence <br />{" "}
-            <span className="font-normal">with Expert Web Development</span>
+          <span className="font-normal text-3xl"> Transform Your Online </span> <br />{" "}
+            <span className="font-bold">Presence with Expert Web Development</span>
           </h1>
           <p className="text-sm text-center lg:text-xl mt-5 lg:text-start min-w-48">
             Your website is often the first impression customers have of your

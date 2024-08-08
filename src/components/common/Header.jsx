@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="bg-[#0061E0] flex  justify-between gap-1 sticky top-0 lg:shadow-sm ">
+    <div className="bg-[#0061E0] lg:flex  justify-between gap-1 sticky top-0 lg:shadow-sm hidden lg:visible ">
       <div className="navlinks flex flex-col gap-3 min-h-60   p-5 lg:flex-row lg:min-h-0 lg:gap-8 lg:p-4 lg:ml-28 lg:items-center">
         <Link href={"/"}>
         {/* <Image src={Logo} width={200} hight={100} alt="Logo"/> */}

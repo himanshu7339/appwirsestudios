@@ -5,6 +5,7 @@ import Footer from "@/components/common/Footer";
 import TopBar from "@/components/common/TopBar";
 import WhatApp from "@/components/common/WhatApp";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
+import HamburgerMenu from "@/components/common/HamburgerMenu";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <WhatApp />
         <TopBar />
         <Header />
+        <HamburgerMenu/>
 
         {children}
         <Footer />
