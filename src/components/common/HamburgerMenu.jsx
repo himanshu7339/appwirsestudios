@@ -16,7 +16,7 @@ const HamburgerMenu = () => {
   };
   return (
     <>
-      <GiHamburgerMenu onClick={toggleMenu} className="text-2xl left-4 top-7 absolute" />
+      <GiHamburgerMenu onClick={toggleMenu} className="text-2xl left-4 top-7 absolute lg:hidden" />
       <div
         className={`absolute  z-30 min-h-[100%] shadow-lf min-w-[70%]  lg:hidden visible  bg-blue ${isOpen ? "translate-x-0" : "-translate-x-full"} duration-500 `}
       >
