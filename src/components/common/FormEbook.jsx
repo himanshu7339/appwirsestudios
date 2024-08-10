@@ -1,12 +1,12 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
-const Form = () => {
+const FormEbook = () => {
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobileNumber: "",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,7 +21,7 @@ const Form = () => {
   };
 
   let url =
-    "https://script.google.com/macros/s/AKfycbyuGUedSFiK4dsymLAPfStUqqlnTQx--4fISybP-wSC0LGBkvh6o7MZT3zyc2U7ntqH5w/exec";
+    "https://script.google.com/macros/s/AKfycbxMybOO4bO7hByzXNYHd2QDi020z4vaa_hAgUQHVmkXAOa7iIYB4M_qCViQwdLu8NOp/exec";
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -42,8 +42,11 @@ const Form = () => {
       const result = await response.json();
       if (result.result === "success") {
         setLoading(false);
-        alert(result.message);
+        router.push(
+          "https://drive.usercontent.google.com/download?id=1KT1yRMOKTvIQLQFz9dZnIi56KHAp06s4&export=download&authuser=0&confirm=t&uuid=08572948-722b-4c0f-b7f2-5fdc7b95d5c0&at=APZUnTUT85UJmSi7nm2utaiAx3pq:1723256892845"
+        );
       } else {
+        setLoading(false);
         alert("Error: " + result.message);
       }
     } catch (error) {
@@ -54,10 +57,11 @@ const Form = () => {
   return (
     <form
       onSubmit={onSubmitHandler}
-      className="flex flex-col bg-blue  p-2 lg:p-20 gap-3 rounded-md shadow-lg "
+      className="flex flex-col bg-blue  p-2 lg:p-20 gap-3 rounded-md  "
     >
-
-      <h1 className="lg:ext-2xl text-xl font-bold text-white">Please submit the form, and <br/> we will call soon!</h1>
+      <h1 className="lg:ext-2xl text-xl font-bold text-white">
+        GET A FREE COPY OF OUR EBOOK
+      </h1>
       <label htmlFor="name" className="flex flex-col text-white">
         Name
         <input
@@ -80,20 +84,7 @@ const Form = () => {
           onChange={handleChange}
         />
       </label>
-      <label htmlFor="mobileNumber" className="flex flex-col text-white">
-        Mobile No
-        <input
-          className=" p-2 rounded-md text-black focus:outline-none"
-          type="text"
-          placeholder="Mobile"
-          name="mobileNumber"
-          value={formData.mobileNumber}
-          onChange={handleChange}
-          pattern="\d{10}"
-          title="Please enter a valid 10-digit mobile number"
-          required
-        />
-      </label>
+
       <button
         type="submit"
         className={`bg-blue hover:bg-black duration-300 transition text-white border p-1 m-2 rounded-md ${
@@ -101,10 +92,10 @@ const Form = () => {
         }`}
         disabled={loading}
       >
-        {loading ? "Processing..." : "Schedule your free consultation"}
+        {loading ? "Processing..." : "Claim your FREE Copy Now"}
       </button>
     </form>
   );
 };
 
-export default Form;
+export default FormEbook;

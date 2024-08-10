@@ -1,11 +1,12 @@
 import Image from "next/image";
 
-
+import Ebook from "@/images/eBook.jpg";
 import Me from "@/images/me.jpg";
 
 import Form from "@/components/common/Form";
 import { IoCall } from "react-icons/io5";
-import CodingImage from "@/images/Coding-Image.jpg"
+import CodingImage from "@/images/Coding-Image.jpg";
+import FormEbook from "@/components/common/FormEbook";
 
 const testimonials = [
   {
@@ -48,13 +49,17 @@ export default function Home() {
         {/* Attention */}
         <section className="hero-section m-4 mt-14 ">
           <h1 className="text-center lg:text-start text-xl lg:text-6xl font-semibold">
-          <span className="font-normal text-3xl"> Transform Your Online </span> <br />{" "}
-            <span className="font-bold">Presence with Expert Web Development</span>
+            <span className="font-normal text-3xl lg:text-6xl">
+              {" "}
+              Is Your Business Missing Out{" "}
+            </span>{" "}
+            <br /> <span className="font-bold">on the Digital Revolution?</span>
           </h1>
-          <p className="text-sm text-center lg:text-xl mt-5 lg:text-start min-w-48">
-            Your website is often the first impression customers have of your
-            business. Make it count with a stunning, high-performance website
-            from <br /> appwisestudios Web Development Service.
+          <p className="text-sm text-center lg:text-xl mt-5 lg:text-start lg:w-[64rem]">
+            In today’s digital age, not having a website means missing out on
+            countless opportunities. <br /> A professional website is your
+            online storefront, accessible to customers 24/7, showcasing your
+            services, and setting you apart from competitors
           </p>
 
           <div className="header-button lg:w-[8.5rem] h-12 border-2 border-white bg-blue hover:bg-black duration-300 transition block p-3 mt-2 rounded-md">
@@ -72,9 +77,57 @@ export default function Home() {
         </div>
       </div>
 
+      {/* EBook */}
+
+      <section className="download-eBook  p-11 bg-blue">
+        <div className="heading mb-6">
+          <h1 className="text-center text-white  lg:text-xl">
+            GET A FREE COPY OF OUR EBOOK
+          </h1>
+          <h2 className="text-center text-white font-bold lg:text-4xl text-xl">
+            WEBSITE AUDIT BLUEPRINT hOW TO ENHANCE SEO SPEED,AND USER EXPERIENCE{" "}
+            <br />
+            TIPS FOR AUDIT OWN SITE
+          </h2>
+        </div>
+        <div className="flex lg:flex-row flex-col justify-center gap-20">
+          <Image className="shadow-lg" src={Ebook} width={300} alt="eBook" />
+          <FormEbook />
+        </div>
+      </section>
+
+      {/* video section */}
+      <div className="container mx-auto p-4">
+        <div className="bg-white rounded-lg overflow-hidden">
+          <div className="p-6">
+            <h1 className="lg:text-2xl mb-4">
+              Imagine this  A single Google search leads potential customers
+              straight to your business. With a professionally designed website,
+              your business becomes easily discoverable online, driving more
+              traffic and boosting your profits. Don’t miss out on the
+              opportunity to grow your business with a powerful online presence!
+            </h1>
+            <div className="aspect-w-16 aspect-h-9 flex justify-center">
+              <iframe
+                width="800"
+                height="500"
+                src="https://www.youtube.com/embed/cmoSVEjNXZY?si=DP0ofnHHAtvBCiWa"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Why Choose Us? */}
 
       <section className="why-we-choose-us flex flex-col gap-7 lg:flex-row p-7">
+     
         <div className="right-div">
           <h1 className="lg:text-start text-xl text-center lg:text-5xl font-bold mb-6">
             Why Choose Us?
@@ -88,7 +141,7 @@ export default function Home() {
         </div>
 
         <div className="right-left">
-          <Image src={CodingImage} alt="coding-image"/>
+          <Image src={CodingImage} alt="coding-image" />
         </div>
       </section>
 

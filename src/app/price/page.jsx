@@ -54,7 +54,12 @@ const PricingPage = () => {
             <div className="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8   shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
               <h3 className="mb-4 text-2xl font-semibold">Basic Plan</h3>
 
-              <div className="flex justify-center items-baseline my-9">
+              <div className="flex flex-col justify-center items-baseline my-9">
+                <div className="discount-price-cut flex items-center mb-4">
+                <span className="mr-2 text-2xl line-through ">₹6,000 </span>
+                <span className="bg-blue text-white p-1 rounded-md"> Discount 50%</span>
+                </div>
+              
                 <span className="mr-2 text-5xl font-extrabold">₹2,999</span>
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
@@ -107,7 +112,12 @@ const PricingPage = () => {
             <div className="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8   shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
               <h3 className="mb-4 text-2xl font-semibold">Standard Plan</h3>
 
-              <div className="flex justify-center items-baseline my-9">
+              <div className="flex flex-col justify-center items-baseline my-9">
+              <div className="discount-price-cut flex items-center mb-4">
+                <span className="mr-2 text-2xl line-through ">₹9,999</span>
+                <span className="bg-blue text-white p-1 rounded-md"> Discount 30%</span>
+                </div>
+                
                 <span className="mr-2 text-5xl font-extrabold">₹6,999</span>
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
@@ -176,7 +186,11 @@ const PricingPage = () => {
             <div className="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8   shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
               <h3 className="mb-4 text-2xl font-semibold">Premium Plan</h3>
              
-              <div className="flex justify-center items-baseline my-9">
+              <div className="flex flex-col justify-center items-baseline my-9">
+              <div className="discount-price-cut flex items-center mb-4">
+                <span className="mr-2 text-2xl line-through ">₹23,999 </span>
+                <span className="bg-blue text-white p-1 rounded-md"> Discount 33%</span>
+                </div>
                 <span className="mr-2 text-5xl font-extrabold">₹15,999</span>
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
