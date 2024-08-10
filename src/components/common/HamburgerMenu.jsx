@@ -15,7 +15,7 @@ const HamburgerMenu = () => {
   return (
     <>
       <GiHamburgerMenu onClick={toggleMenu} className="text-2xl left-4 top-7 absolute lg:hidden" />
-      <div className="header-button shadow-md  flex border-2 border-beige bg-navy  rounded-md hover:bg-black duration-300 transition bg-blue p-1 right-4 top-6 absolute lg:hidden">
+      <div className="header-button  flex border-2 border-white  rounded-md hover:bg-black duration-300 transition bg-blue p-1 right-4 top-6 absolute lg:hidden">
         <a
           href={`tel:+91 8376849918`}
           className={`  flex items-center justify-between gap-2  text-beige  rounded-lg`}
