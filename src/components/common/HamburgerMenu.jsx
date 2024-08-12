@@ -33,6 +33,7 @@ const HamburgerMenu = () => {
         </div>
         <div className="navlinks-content flex flex-col gap-3 pl-4 pb-4 text-white text-sm">
           <Link onClick={toggleMenu} href="/">Home</Link>
+          <Link onClick={toggleMenu} href="/blogs">Blogs</Link>
           <Link onClick={toggleMenu} href="/price">Pricing</Link>
           <Link onClick={toggleMenu} href="/about">About</Link>
           <Link onClick={toggleMenu} href="/contact">Enquiry</Link>

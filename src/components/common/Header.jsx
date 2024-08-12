@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="bg-[#0061E0] lg:flex  justify-between gap-1 sticky top-0 lg:shadow-sm hidden lg:visible ">
+    <div className="bg-[#0061E0] lg:flex  justify-between gap-1 sticky top-0 lg:shadow-sm hidden lg:visible z-20 ">
       <div className="navlinks flex flex-col gap-3 min-h-60   p-5 lg:flex-row lg:min-h-0 lg:gap-8 lg:p-4 lg:ml-28 lg:items-center">
         <Link href={"/"}>
         {/* <Image src={Logo} width={200} hight={100} alt="Logo"/> */}
@@ -15,6 +15,7 @@ const Header = () => {
         
 
         <Link className="text-white hover:text-beige transition duration-300" href="/">Home</Link>
+        <Link className="text-white hover:text-beige transition duration-300" href="/blogs">Blogs</Link>
         <Link className="text-white hover:text-beige duration-300 transition" href="/price">Pricing</Link>
         {/* <Link href="/dashboard">Projects</Link> */}
         <Link className="text-white hover:text-beige duration-300 transition" href="/termsandconditions">Terms And Conditions</Link>
