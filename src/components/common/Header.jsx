@@ -22,12 +22,10 @@ const Header = () => {
         <Link className="text-white hover:text-beige duration-300 transition" href="/about">About Us</Link>
         <Link className="text-white hover:text-beige duration-300 transition" href="/contact">Enquiry</Link>
       </div>
-      <div className="header-button shadow-md h-12 flex border-2 border-beige bg-navy lg:p-3 p-2 m-2 rounded-md hover:bg-black duration-300 transition">
-        <a
-          href={`tel:+91 8376849918`}
-          className={`  flex items-center justify-between gap-2  text-beige  rounded-lg`}
-        >
-           Let&apos;s Talk <IoCall className="" />
+      <div className="header-button shadow-md h-12 flex border-2 rounded-full  border-beige bg-navy lg:p-3 p-2 m-2  hover:bg-black duration-300 transition">
+      <a href={`tel:+91 8376849918`} className="inline-flex items-center  text-white  transition duration-300">
+          <span className="mr-2">Hire Today</span>
+          <IoCall className="w-5 h-5" />
         </a>
       </div>
     </div>

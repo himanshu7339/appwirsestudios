@@ -14,8 +14,8 @@ const HamburgerMenu = () => {
  
   return (
     <>
-      <GiHamburgerMenu onClick={toggleMenu} className="text-2xl left-4 top-7 absolute lg:hidden" />
-      <div className="header-button  flex border-2 border-white  rounded-md hover:bg-black duration-300 transition bg-blue p-1 right-4 top-6 absolute lg:hidden">
+      <GiHamburgerMenu onClick={toggleMenu} className="text-2xl text-white left-4 top-7 absolute lg:hidden" />
+      <div className="header-button  flex border-2 border-white  rounded-full hover:bg-black duration-300 transition bg-blue p-1 px-2 right-4 top-6 absolute lg:hidden">
         <a
           href={`tel:+91 8376849918`}
           className={`  flex items-center justify-between gap-2  text-beige  rounded-lg`}
@@ -25,13 +25,13 @@ const HamburgerMenu = () => {
       </div>
       
       <div
-        className={`absolute  z-30 min-h-[100%] shadow-lf min-w-[70%]  lg:hidden visible  bg-blue ${isOpen ? "translate-x-0" : "-translate-x-full"} duration-500 `}
+        className={`absolute  z-30 min-h-[100%]  shadow-lf min-w-[70%]  lg:hidden visible  bg-blue ${isOpen ? "translate-x-0" : "-translate-x-full"} duration-500 `}
       >
         <div className="top-div flex justify-between p-4">
             <h1 className=" text-xl font-bold">Appwisestudios</h1>
           <RxCross2 onClick={toggleMenu} className={`text-2xl text-white   ${isOpen ? "visible" : "hidden"}`} />
         </div>
-        <div className="navlinks-content flex flex-col gap-3 pl-4 pb-4 text-white text-sm">
+        <div className="navlinks-content flex flex-col gap-3 pl-4 pb-4 text-white text-[0.9rem]">
           <Link onClick={toggleMenu} href="/">Home</Link>
           <Link onClick={toggleMenu} href="/blogs">Blogs</Link>
           <Link onClick={toggleMenu} href="/price">Pricing</Link>

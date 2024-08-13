@@ -33,6 +33,14 @@ html {
   transition: all 0.6s;
 }
 
+.hero-section-div{
+  background-image: url("../images/Hero-section-image.jpg");
+  background-size: cover;
+  background-position: 25% 75%;
+ 
+
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

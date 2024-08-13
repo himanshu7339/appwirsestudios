@@ -53,57 +53,67 @@ const Form = () => {
   };
   return (
     <form
-      onSubmit={onSubmitHandler}
-      className="flex flex-col bg-blue  p-2 lg:p-20 gap-3 rounded-md shadow-lg "
+    onSubmit={onSubmitHandler}
+    className="flex flex-col border border-white bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] p-8 lg:p-10 gap-6 rounded-lg shadow-xl"
+  >
+    <h1 className="text-2xl lg:text-4xl font-bold text-white text-center mb-6">
+      Please submit the form, and <br /> we will call soon!
+    </h1>
+    
+    <label htmlFor="name" className="flex flex-col text-white mb-4">
+      <span className="text-lg font-semibold mb-1">Name</span>
+      <input
+        name="name"
+        type="text"
+        className="p-3 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#3b82f6] transition"
+        placeholder="Enter your name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+      />
+    </label>
+    
+    <label htmlFor="email" className="flex flex-col text-white mb-4">
+      <span className="text-lg font-semibold mb-1">Email</span>
+      <input
+        name="email"
+        type="email"
+        className="p-3 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#3b82f6] transition"
+        placeholder="example@gmail.com"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
+    </label>
+    
+    <label htmlFor="mobileNumber" className="flex flex-col text-white mb-4">
+      <span className="text-lg font-semibold mb-1">Mobile No</span>
+      <input
+        className="p-3 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#3b82f6] transition"
+        type="text"
+        placeholder="Mobile Number"
+        name="mobileNumber"
+        value={formData.mobileNumber}
+        onChange={handleChange}
+        pattern="\d{10}"
+        title="Please enter a valid 10-digit mobile number"
+        required
+      />
+    </label>
+    
+    <button
+      type="submit"
+      className={`bg-[#1e3a8a] hover:bg-[#1d4ed8] duration-300 transition text-white border p-3 rounded-md ${
+        loading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
+      }`}
+      disabled={loading}
     >
+      {loading ? "Processing..." : "Schedule your free consultation"}
+    </button>
+  </form>
+  
 
-      <h1 className="lg:ext-2xl text-xl font-bold text-white">Please submit the form, and <br/> we will call soon!</h1>
-      <label htmlFor="name" className="flex flex-col text-white">
-        Name
-        <input
-          name="name"
-          type="text"
-          className=" p-2 rounded-md text-black focus:outline-none"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-      </label>
-      <label htmlFor="email" className="flex flex-col text-white">
-        Email
-        <input
-          name="email"
-          type="email"
-          className=" p-2 rounded-md text-black focus:outline-none"
-          placeholder="example@gmail.com"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </label>
-      <label htmlFor="mobileNumber" className="flex flex-col text-white">
-        Mobile No
-        <input
-          className=" p-2 rounded-md text-black focus:outline-none"
-          type="text"
-          placeholder="Mobile"
-          name="mobileNumber"
-          value={formData.mobileNumber}
-          onChange={handleChange}
-          pattern="\d{10}"
-          title="Please enter a valid 10-digit mobile number"
-          required
-        />
-      </label>
-      <button
-        type="submit"
-        className={`bg-blue hover:bg-black duration-300 transition text-white border p-1 m-2 rounded-md ${
-          loading ? "opacity-50 cursor-not-allowed" : ""
-        }`}
-        disabled={loading}
-      >
-        {loading ? "Processing..." : "Schedule your free consultation"}
-      </button>
-    </form>
+  
   );
 };
 

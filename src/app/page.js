@@ -1,12 +1,18 @@
 import Image from "next/image";
-
 import Ebook from "@/images/eBook.jpg";
 import Me from "@/images/me.jpg";
+import { MdOutlinePriceChange } from "react-icons/md";
+import BusinessGrowImage from "@/images/benefit-key/business_grow.svg";
+import CustomDesign from "@/images/benefit-key/custom_design.svg";
+import ConversionFocus from "@/images/benefit-key/conversion_focused.svg";
+import MobileResponsive from "@/images/benefit-key/mobile_responsive.webp";
+import SEOImage from "@/images/benefit-key/seo.jpeg";
 
 import Form from "@/components/common/Form";
 import { IoCall } from "react-icons/io5";
 import CodingImage from "@/images/Coding-Image.jpg";
 import FormEbook from "@/components/common/FormEbook";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -42,40 +48,198 @@ const testimonials = [
       "Our website's performance and user experience have greatly improved, thanks to the team at [Your Company]. We've received numerous compliments from our clients.",
   },
 ];
+const benefits = [
+  {
+    image: BusinessGrowImage,
+    headline: "Boost Your Business Growth",
+    subheading: "Achieve up to 79% increase in online engagement and sales.",
+  },
+  {
+    image: CustomDesign,
+    headline: "Custom Designs",
+    subheading:
+      "Tailored websites that reflect your brand’s identity and resonate with your target audience.",
+  },
+  {
+    image: ConversionFocus,
+    headline: "Conversion-Focused",
+    subheading:
+      "Strategically developed to turn visitors into loyal customers.",
+  },
+  {
+    image: MobileResponsive,
+    headline: "Mobile Responsive",
+    subheading:
+      "Seamlessly optimized for all devices, ensuring your site looks great everywhere.",
+  },
+  {
+    image: SEOImage,
+    headline: "SEO Optimized",
+    subheading:
+      "Built with search engine optimization best practices to help you rank higher and get found online.",
+  },
+  {
+    image: SEOImage,
+    headline: "Ongoing Support",
+    subheading:
+      "We provide continuous support to keep your site running smoothly.",
+  },
+];
+const processSteps = [
+  {
+    heading: "Consultation",
+    borderColor: "border-[#FFAF00]",
+    color: "#7C00FE", // Example color
+  },
+  {
+    heading: "requirement",
+    borderColor: "border-[#F9E400]",
+  },
+  {
+    heading: "Design",
+    borderColor: "border-[#FFAF00]",
+  },
+  {
+    heading: "Development",
+    borderColor: "border-[#F5004F]",
+  },
+  {
+    heading: "Testing",
+    borderColor: "border-[#179BAE]",
+  },
+  {
+    heading: "Launch & Support",
+    borderColor: "border-[#BED754]",
+  },
+];
+
 export default function Home() {
   return (
     <div className="home">
-      <div className="hero-section-div flex flex-col lg:flex-row  lg:p-11 justify-between">
+      <div className="hero-section-div flex flex-col lg:flex-row lg:p-11 justify-between">
         {/* Attention */}
-        <section className="hero-section m-4 mt-14 ">
-          <h1 className="text-center lg:text-start text-xl lg:text-6xl font-semibold">
-            <span className="font-normal text-3xl lg:text-6xl">
-              {" "}
-              Is Your Business Missing Out{" "}
-            </span>{" "}
-            <br /> <span className="font-bold">on the Digital Revolution?</span>
-          </h1>
-          <p className="text-sm text-center lg:text-xl mt-5 lg:text-start lg:w-[64rem]">
-            In today’s digital age, not having a website means missing out on
-            countless opportunities. <br /> A professional website is your
-            online storefront, accessible to customers 24/7, showcasing your
-            services, and setting you apart from competitors
+        <section className="hero-section m-4 mt-14 flex-1">
+        <h1 className="text-center lg:text-start text-2xl lg:text-5xl font-semibold text-white">
+  <span className="font-bold text-2xl lg:text-5xl">
+    Supercharge Your Online Business with{" "}
+  </span>
+  <br />
+  <span className="font-bold text-xl lg:text-5xl leading-9">
+    a Freelancer Website Developer—Grow <br /> by 79% or More! 📈
+  </span>
+</h1>
+
+          <p className="text-sm text-white text-center lg:text-lg mt-5 lg:text-start lg:w-[80%] lg:max-w-[64rem]">
+            Elevate your brand and capture more leads with a stunning,
+            high-converting website. Let’s turn your vision into reality and
+            accelerate your business success!
           </p>
 
-          <div className="header-button lg:w-[8.5rem] h-12 border-2 border-white bg-blue hover:bg-black duration-300 transition block p-3 mt-2 rounded-md">
-            <a
-              href={`tel:+91 8376849918`}
-              className={`  flex items-center justify-between gap-2  text-white  rounded-lg`}
-            >
-              Let&apos;s Talk <IoCall className="" />
-            </a>
+          <div className="button-pricing-hire flex  lg:flex-row justify-center lg:justify-start mt-5">
+            <div className="header-button  bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy lg:p-3 p-2 m-2 hover:bg-black duration-300 transition">
+              <a
+                href={`tel:+91 8376849918`}
+                className="inline-flex items-center text-white transition duration-300"
+              >
+                <span className="mr-2 text-sm lg:text-lg ">Hire Today</span>
+                <IoCall className="w-5 h-5" />
+              </a>
+            </div>
+            <div className="header-button bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy lg:p-3 p-2 m-2 hover:bg-black duration-300 transition">
+              <Link
+                href={`/price`}
+                className="inline-flex items-center text-white transition duration-300"
+              >
+                <span className="mr-2 text-sm lg:text-lg">Pricing</span>
+                <MdOutlinePriceChange className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </section>
-        {/* form section */}
-        <div className="form-section-lead p-5 lg:p-0 ">
+
+        {/* Form Section */}
+        <div className="form-section-lead p-5 lg:p-0 flex-2">
           <Form />
         </div>
       </div>
+
+      {/* key and benefits */}
+
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto text-center">
+          <h2 className="lg:text-5xl text-2xl font-semibold text-blue mb-6">
+            FEATURES & BENEFITS
+          </h2>
+          <p className="lg:text-xl px-2 text-gray-600 mb-12 font-medium leading-relaxed lg:px-10 bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 text-transparent bg-clip-text">
+            This subheading highlights the importance of the benefits and
+            encourages the reader to explore how your services can help them
+            achieve their goals.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+              >
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={benefit.image}
+                  alt={benefit.headline}
+                  className="w-32 h-32 mx-auto mb-4"
+                />
+                <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                  {benefit.headline}
+                </h3>
+                <p className="text-gray-600 font-regular">
+                  {benefit.subheading}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* process overview */}
+      <section className="py-16 bg-gray-100 text-center">
+        <div className="container mx-auto">
+          <h2 className="lg:text-5xl text-2xl  font-semibold text-blue mb-8">
+            Our Process Overview
+          </h2>
+          <div className="flex flex-col lg:flex-row px-4 gap-5 justify-center items-center space-x-4">
+            {processSteps.map((step, index) => (
+              <div
+                key={index}
+                className={`rounded-full p-4 border-4 ${step.borderColor}`}
+              >
+                <h1 className="rounded-full p-4">{step.heading}</h1>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* final cta */}
+
+      <section className="py-16 bg-gray-100 text-center">
+        <div className="container mx-auto">
+          <h2 className=" lg:text-5xl text-2xl  font-semibold text-gray-800 mb-6">
+            Ready to Take the Next Step?
+          </h2>
+          <p className="lg:text-lg px-3 text-gray-600 mb-8">
+            Don’t let an outdated website hold you back. Get started today and
+            see the difference a professional website can make for your
+            business.
+          </p>
+          <a
+            href={`tel:+91 8376849918`}
+            className="inline-flex items-center hover:bg-black px-6 py-3 bg-blue text-white rounded-full  transition duration-300"
+          >
+            <span className="mr-2">Hire Today</span>
+            <IoCall className="w-5 h-5" />
+          </a>
+        </div>
+      </section>
 
       {/* EBook */}
 
@@ -94,81 +258,6 @@ export default function Home() {
           <Image className="shadow-lg" src={Ebook} width={300} alt="eBook" />
           <FormEbook />
         </div>
-      </section>
-
-      {/* video section */}
-      <div className="container mx-auto p-4">
-        <div className="bg-white rounded-lg overflow-hidden">
-          <div className="p-6">
-            <h1 className="lg:text-2xl mb-4">
-              Imagine this  A single Google search leads potential customers
-              straight to your business. With a professionally designed website,
-              your business becomes easily discoverable online, driving more
-              traffic and boosting your profits. Don’t miss out on the
-              opportunity to grow your business with a powerful online presence!
-            </h1>
-            <div className="aspect-w-16 aspect-h-9 flex justify-center">
-              <iframe
-                width="800"
-                height="500"
-                src="https://www.youtube.com/embed/cmoSVEjNXZY?si=DP0ofnHHAtvBCiWa"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-                
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Why Choose Us? */}
-
-      <section className="why-we-choose-us flex flex-col gap-7 lg:flex-row p-7">
-     
-        <div className="right-div">
-          <h1 className="lg:text-start text-xl text-center lg:text-5xl font-bold mb-6">
-            Why Choose Us?
-          </h1>
-          <p className="text-sm lg:text-xl">
-            In today’s digital world, your website is your most important
-            business tool. It needs to be attractive, functional, and
-            user-friendly. Our web development service ensures your website
-            meets all these criteria and more.
-          </p>
-        </div>
-
-        <div className="right-left">
-          <Image src={CodingImage} alt="coding-image" />
-        </div>
-      </section>
-
-      {/* We Address Your Key Challenges */}
-      <section className="">
-        <ul className="list-disc bg-blue p-7 lg:text-xl ">
-          <h2 className="lg:text-2xl mb-5 font-semibold text-start">
-            We Address Your Key Challenges
-          </h2>
-          {/* list */}
-          <li>
-            <span>Outdated Design</span>: Fresh, modern designs that reflect
-            your brand.
-          </li>
-          <li>
-            <span>Poor User Experience</span>: Seamless navigation and
-            functionality.
-          </li>
-          <li>
-            <span>Non-Responsive Sites</span>: Fully optimized for all devices.
-          </li>
-          <li>
-            <span>Low Conversion Rates</span>: Strategic design to convert
-            visitors into customers.
-          </li>
-        </ul>
-        <div className="line-div bg-white h-2"></div>
       </section>
     </div>
   );
