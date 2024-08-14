@@ -9,7 +9,7 @@ import HamburgerMenu from "@/components/common/HamburgerMenu";
 const barlow = Barlow({ subsets: [], weight:['400','700','800'] });
 
 export const metadata = {
-  title: "Appwisestudios | High-Quality Web Development at Affordable Prices",
+  title: "Hire a Professional Freelancer Website Developer!",
   description:
     "Appwisestudios offers premium web development services that fit your budget. Our responsive, user-friendly, and fast-loading websites ensure a top-notch online presence. Contact us to start building your dream website!",
 };
