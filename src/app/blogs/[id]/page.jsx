@@ -53,7 +53,7 @@ const Blog = async ({ params }) => {
             Published on{" "}
             {new Date(result.$createdAt).toLocaleDateString("en-GB")}
           </p>
-          <h1 className="lg:text-4xl max-w-screen-lg font-semibold text-gray-800 mb-2">
+          <h1 className="lg:text-4xl max-w-screen-lg font-bold text-gray-800 mb-2">
             {result.title}
           </h1>
         </div>

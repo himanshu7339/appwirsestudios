@@ -92,7 +92,7 @@ const processSteps = [
     color: "#7C00FE", // Example color
   },
   {
-    heading: "requirement",
+    heading: "Requirement",
     borderColor: "border-[#F9E400]",
   },
   {
@@ -116,7 +116,7 @@ const processSteps = [
 export default function Home() {
   return (
     <div className="home">
-      <div className="hero-section-div flex flex-col lg:flex-row lg:p-11 justify-between">
+      <div className="hero-section-div flex flex-col lg:items-center lg:flex-row lg:p-11 justify-between">
         {/* Attention */}
         <section className="hero-section m-4 mt-14 flex-1">
         <h1 className="text-center lg:text-start text-2xl lg:text-5xl font-semibold text-white">
@@ -125,7 +125,7 @@ export default function Home() {
   </span>
   <br />
   <span className="font-bold text-xl lg:text-5xl leading-9">
-    a Freelancer Website Developer—Grow <br /> by 79% or More! 📈
+    a Freelancer Website Developer—Grow  by 79% or More! 📈
   </span>
 </h1>
 
@@ -188,10 +188,10 @@ export default function Home() {
                   alt={benefit.headline}
                   className="w-32 h-32 mx-auto mb-4"
                 />
-                <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                <h3 className="text-2xl font-bold text-blue mb-2">
                   {benefit.headline}
                 </h3>
-                <p className="text-gray-600 font-regular">
+                <p className="text-gray-600 font-regular text-xl">
                   {benefit.subheading}
                 </p>
               </div>

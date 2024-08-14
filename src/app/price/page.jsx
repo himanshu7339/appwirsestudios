@@ -43,7 +43,7 @@ const PricingPage = () => {
       <section className="p-4 md:p-8">
         <div className="py-8 max-w-screen-xl lg:py-16">
           <div className="mx-auto max-w-3xl  text-center pb-12 md:pb-20">
-            <h2 className="text-3xl font-bold sm:text-4xl mb-4">
+            <h2 className="text-3xl font-semibold sm:text-4xl mb-4 text-blue">
               Pricing Plans
             </h2>
             <p className="text-xl">
@@ -60,7 +60,7 @@ const PricingPage = () => {
                 <span className="bg-blue text-white p-1 rounded-md"> Discount 50%</span>
                 </div>
               
-                <span className="mr-2 text-5xl font-extrabold">₹2,999</span>
+                <span className="mr-2 text-5xl font-bold">₹2,999</span>
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">

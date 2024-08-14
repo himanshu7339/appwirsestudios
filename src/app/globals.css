@@ -5,11 +5,15 @@
 
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply text-xl;
   }
   h2 {
+    @apply text-3xl;
+    
+  }
+  p {
     @apply text-xl;
-    @apply font-semibold
+    
   }
   /* ... */
 }

@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Barlow } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
@@ -6,7 +6,7 @@ import TopBar from "@/components/common/TopBar";
 import WhatApp from "@/components/common/WhatApp";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import HamburgerMenu from "@/components/common/HamburgerMenu";
-const inter = Inter({ subsets: ["latin"] });
+const barlow = Barlow({ subsets: [], weight:['400','700','800'] });
 
 export const metadata = {
   title: "Appwisestudios | High-Quality Web Development at Affordable Prices",
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth focus:scroll-auto">
-      <body className={inter.className}>
+      <body className={barlow.className}>
         <WhatApp />
         <TopBar />
         <Header />
