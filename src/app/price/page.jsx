@@ -52,15 +52,15 @@ const PricingPage = () => {
           </div>
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
             <div className="flex flex-col p-6 mx-auto max-w-md text-center rounded-box shadow-xl xl:p-8   shadow-primary/10 border-primary/10 transition hover:border-primary-focus/20 hover:shadow-primary-focus/20">
-              <h3 className="mb-4 text-2xl font-semibold">Basic Plan</h3>
+              <h3 className="mb-4 lg:text-2xl text-4xl font-semibold">Basic Plan</h3>
 
               <div className="flex flex-col justify-center items-baseline my-9">
-                <div className="discount-price-cut flex items-center mb-4">
+                <div className="discount-price-cut flex  items-center mb-4 justify-center">
                 <span className="mr-2 text-2xl line-through ">₹6,000 </span>
                 <span className="bg-blue text-white p-1 rounded-md"> Discount 50%</span>
                 </div>
               
-                <span className="mr-2 text-5xl font-bold">₹2,999</span>
+                <span className=" text-5xl text-center font-bold">₹2,999</span>
               </div>
               <ul role="list" className="mb-8 space-y-4 text-left">
                 <li className="flex items-center space-x-3">

@@ -18,10 +18,10 @@ const BlogCard = ({ title, date, image, metaDescription, id }) => {
           height={500}
         />
         <div className="p-2">
-        <p className="text-gray-500 text-sm mb-2">
+        <p className="text-gray-500 text-xl mb-2">
             {new Date(date).toLocaleDateString("en-GB")}
           </p>
-          <h3 className="lg:text-xl  font-semibold text-black">{title}</h3>
+          <h3 className="lg:text-xl text-2xl  font-semibold text-black">{title}</h3>
           
           <p className="text-gray-700 mt-3 text-lg">   {truncateText(metaDescription, 15)}</p>
         </div>

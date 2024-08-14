@@ -119,24 +119,21 @@ export default function Home() {
       <div className="hero-section-div flex flex-col lg:items-center lg:flex-row lg:p-11 justify-between">
         {/* Attention */}
         <section className="hero-section m-4 mt-14 flex-1">
-        <h1 className="text-center lg:text-start text-2xl lg:text-5xl font-semibold text-white">
-  <span className="font-bold text-2xl lg:text-5xl">
-    Supercharge Your Online Business with{" "}
-  </span>
-  <br />
-  <span className="font-bold text-xl lg:text-5xl leading-9">
-    a Freelancer Website Developer—Grow  by 79% or More! 📈
-  </span>
-</h1>
+          <h1 className="text-center mt-9 lg:mt-0 lg:text-start text-2xl lg:text-5xl font-semibold text-white">
+            <span className="font-bold text-3xl lg:text-5xl">
+              Supercharge Your Online Business with a Freelancer Website
+              Developer—Grow by 79% or More! 📈
+            </span>
+          </h1>
 
-          <p className="text-sm text-white text-center lg:text-lg mt-5 lg:text-start lg:w-[80%] lg:max-w-[64rem]">
+          <p className="text-lg text-white text-center lg:text-lg mt-5 lg:text-start lg:w-[80%] lg:max-w-[64rem]">
             Elevate your brand and capture more leads with a stunning,
             high-converting website. Let’s turn your vision into reality and
             accelerate your business success!
           </p>
 
           <div className="button-pricing-hire flex  lg:flex-row justify-center lg:justify-start mt-5">
-            <div className="header-button  bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy lg:p-3 p-2 m-2 hover:bg-black duration-300 transition">
+            <div className="header-button  bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy p-2   px-3 lg:px-0  lg:p-3  m-2 hover:bg-black duration-300 transition">
               <a
                 href={`tel:+91 8376849918`}
                 className="inline-flex items-center text-white transition duration-300"
@@ -145,7 +142,7 @@ export default function Home() {
                 <IoCall className="w-5 h-5" />
               </a>
             </div>
-            <div className="header-button bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy lg:p-3 p-2 m-2 hover:bg-black duration-300 transition">
+            <div className="header-button bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy lg:p-3  m-2 p-2 px-3 lg:px-0  hover:bg-black duration-300 transition">
               <Link
                 href={`/price`}
                 className="inline-flex items-center text-white transition duration-300"
@@ -165,9 +162,9 @@ export default function Home() {
 
       {/* key and benefits */}
 
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-gray-100 ">
         <div className="container mx-auto text-center">
-          <h2 className="lg:text-5xl text-2xl font-semibold text-blue mb-6">
+          <h2 className="lg:text-5xl text-3xl font-semibold text-blue mb-6">
             FEATURES & BENEFITS
           </h2>
           <p className="lg:text-xl px-2 text-gray-600 mb-12 font-medium leading-relaxed lg:px-10 bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 text-transparent bg-clip-text">
