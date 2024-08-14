@@ -1,17 +1,16 @@
 import React from "react";
 import BlogCard from "@/components/common/BlogCard";
-import { databases, storage, } from "../appwrite";
+import { databases, storage } from "../appwrite";
 
 const Blogs = async () => {
   // get post details using id
-  const {documents:blogs} = await databases.listDocuments(
+  const { documents: blogs } = await databases.listDocuments(
     process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID, // databaseId
     process.env.NEXT_PUBLIC_APPWRITE_BLOGS_COLLECTION_ID, // collectionId
     [] // queries (optional)
   );
-  
 
-  //   // get blog image
+  // get blog image
   //   const image = await storage.getFileView(
   //     '66b99399001591216885', // bucketId
   //     '66b993c6001a46d0a6ad' // fileId
@@ -40,5 +39,3 @@ const Blogs = async () => {
 };
 
 export default Blogs;
-
-export default Blogs

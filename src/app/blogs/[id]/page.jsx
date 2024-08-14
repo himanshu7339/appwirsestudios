@@ -92,31 +92,7 @@ const Blog = async ({ params }) => {
             ))}
               </div>
             </div>
-            <div className="bg-gray-100 p-4 mt-4">
-              <h2 className="text-xl font-bold text-gray-800 mb-4">Categories</h2>
-              <ul className="list-none">
-                <li className="mb-2">
-                  <a href="#" className="text-gray-700 hover:text-gray-900">
-                    Category 1
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="#" className="text-gray-700 hover:text-gray-900">
-                    Category 2
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="#" className="text-gray-700 hover:text-gray-900">
-                    Category 3
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="#" className="text-gray-700 hover:text-gray-900">
-                    Category 4
-                  </a>
-                </li>
-              </ul>
-            </div>
+           
           </div>
         </div>
       </div>
