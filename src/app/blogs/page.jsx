@@ -4,9 +4,10 @@ import { databases, storage, } from "../appwrite";
 
 const Blogs = async () => {
   // get post details using id
-  const { documents: blogs } = await databases.listDocuments(
-    process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID, // Your Database ID
-    process.env.NEXT_PUBLIC_APPWRITE_BLOGS_COLLECTION_ID, // Your Collection ID
+  const {documents:blogs} = await databases.listDocuments(
+    process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID, // databaseId
+    process.env.NEXT_PUBLIC_APPWRITE_BLOGS_COLLECTION_ID, // collectionId
+    [] // queries (optional)
   );
   
 
@@ -39,3 +40,5 @@ const Blogs = async () => {
 };
 
 export default Blogs;
+
+export default Blogs
