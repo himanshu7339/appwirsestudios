@@ -133,7 +133,7 @@ export default function Home() {
           </p>
 
           <div className="button-pricing-hire flex  lg:flex-row justify-center lg:justify-start mt-5">
-            <div className="header-button  bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy p-2   px-3 lg:px-0  lg:p-3  m-2 hover:bg-black duration-300 transition">
+            <div className="header-button  bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy   p-2 px-3  lg:p-3  m-2 hover:bg-black duration-300 transition">
               <a
                 href={`tel:+91 8376849918`}
                 className="inline-flex items-center text-white transition duration-300"
@@ -142,7 +142,7 @@ export default function Home() {
                 <IoCall className="w-5 h-5" />
               </a>
             </div>
-            <div className="header-button bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy lg:p-3  m-2 p-2 px-3 lg:px-0  hover:bg-black duration-300 transition">
+            <div className="header-button bg-blue shadow-md h-12 flex border-2 rounded-full border-beige bg-navy lg:p-3  m-2 p-2 px-3  hover:bg-black duration-300 transition">
               <Link
                 href={`/price`}
                 className="inline-flex items-center text-white transition duration-300"
