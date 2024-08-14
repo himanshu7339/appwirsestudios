@@ -9,7 +9,9 @@ const Blogs = async() => {
   const {documents:blogs} = await databases.listDocuments(
     process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID, // databaseId
     process.env.NEXT_PUBLIC_APPWRITE_BLOGS_COLLECTION_ID, // collectionId
-    [] // queries (optional)
+    [
+      Query.orderDesc('$createdAt'),
+  ] // queries (optional)
   );
 
 //   // get blog image
