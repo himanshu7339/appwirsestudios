@@ -1,5 +1,8 @@
 import React from "react";
-import Link from "next/link"
+import Link from "next/link";
+import Logo from "@/images/Logo-.svg";
+import Image from "next/image"
+
 const Footer = () => {
   return (
     <footer className="bg-blue text-white py-12">
@@ -10,12 +13,12 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Contact Us</h3>
             <ul>
               <li className="mb-2">
-                <a href="mailto:info@example.com" class="hover:underline">
+                <a href="mailto:info@example.com" className="hover:underline">
                   appwisestudios@gmail.com
                 </a>
               </li>
               <li className="mb-2">
-                <a href="tel:+1234567890" class="hover:underline">
+                <a href="tel:+1234567890" className="hover:underline">
                   +91 8376849918
                 </a>
               </li>
@@ -26,10 +29,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* <!-- Social Media Links --> */}
+
+          {/* <!-- Information Links --> */}
           <div>
             <h3 className="text-lg font-bold mb-4">Information</h3>
-            <ul className="flex space-x-4">
+            <ul className="space-y-2">
               <li>
                 <Link href="/about" className="hover:underline">
                   About Us
@@ -42,32 +46,16 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/termsandconditions" className="hover:underline">
-                Terms And Conditions
+                  Terms And Conditions
                 </a>
               </li>
-              
             </ul>
           </div>
-          {/* <!-- Additional CTAs --> */}
-          {/* <div>
-            <h3 className="text-lg font-bold mb-4">Stay Connected</h3>
-            <div className="mb-4 ">
-              <a
-                href="#subscribe"
-                className="inline-block bg-black text-white font-bold py-2 px-4 rounded-lg hover:bg-slate-800 border-2 border-white"
-              >
-                Subscribe to our newsletter
-              </a>
-            </div>
-            <div>
-              <a
-                href="#follow-us"
-                className="inline-block bg-white text-black font-bold py-2 px-4 rounded-lg border border-blue-600 hover:bg-gray-100"
-              >
-                Follow us on social media
-              </a>
-            </div>
-          </div> */}
+
+          {/* <!-- Logo Column --> */}
+          <div className="flex justify-start lg:justify-end">
+          <Image src={Logo} width={300} hight={200} alt="Logo"/>
+          </div>
         </div>
       </div>
     </footer>

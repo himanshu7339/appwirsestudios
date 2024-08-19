@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import Logo from "@/images/Logo-.svg";
+import Image from "next/image"
 import { RxCross2 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCall } from "react-icons/io5";
@@ -28,7 +30,7 @@ const HamburgerMenu = () => {
         className={`absolute  z-30 min-h-[100%]  shadow-lf min-w-[70%]  lg:hidden visible  bg-blue ${isOpen ? "translate-x-0" : "-translate-x-full"} duration-500 `}
       >
         <div className="top-div flex justify-between items-center p-4">
-            <h1 className=" text-3xl font-bold">Appwisestudios</h1>
+        <Image src={Logo} width={200} hight={200} alt="Logo"/>
           <RxCross2 onClick={toggleMenu} className={`text-2xl text-white   ${isOpen ? "visible" : "hidden"}`} />
         </div>
         <div className="navlinks-content flex flex-col gap-3 pl-4 pb-4 text-white text-[1.3rem]">
