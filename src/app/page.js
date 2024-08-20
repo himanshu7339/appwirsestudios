@@ -3,6 +3,7 @@ import Ebook from "@/images/eBook.jpg";
 import Me from "@/images/me.jpg";
 import { MdOutlinePriceChange } from "react-icons/md";
 import BusinessGrowImage from "@/images/benefit-key/business_grow.svg";
+import OngoingSupport from "@/images/benefit-key/Ongoing Support.png";
 import CustomDesign from "@/images/benefit-key/custom_design.svg";
 import ConversionFocus from "@/images/benefit-key/conversion_focused.svg";
 import MobileResponsive from "@/images/benefit-key/mobile_responsive.webp";
@@ -79,7 +80,7 @@ const benefits = [
       "Built with search engine optimization best practices to help you rank higher and get found online.",
   },
   {
-    image: SEOImage,
+    image: OngoingSupport,
     headline: "Ongoing Support",
     subheading:
       "We provide continuous support to keep your site running smoothly.",
